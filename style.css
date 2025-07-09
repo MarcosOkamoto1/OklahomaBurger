@@ -67,6 +67,11 @@ header nav li a:hover {
   border-bottom: solid 1px #fe6a0f;
 }
 
+header nav li .active {
+  color: #fe6a0f;
+  border-bottom: solid 1px #fe6a0f;
+}
+
 header nav .button {
   display: block;
   border: 1px solid #fff;
@@ -178,6 +183,51 @@ header .menu-icon div {
   transform: translateY(-3px);
 }
 
+.search {
+  background-color: #1f1f1f;
+  padding: 80px 0;
+  margin-top: -100px;
+}
+
+.search .title {
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.search .sides {
+  display: flex;
+  margin-top: 30px;
+  gap: 100px;
+}
+
+.search .leftside,
+.search .rightside {
+  flex: 1;
+}
+
+.search input,
+.search select {
+  width: 100%;
+  background-color: #2b2b2b;
+  font-size: 20px;
+  color: #fff;
+  outline: none;
+  padding: 18px;
+  border-radius: 10px;
+  border: 0;
+}
+
+.search input {
+  background-image: url(./assets/searchIcon.png);
+  background-repeat: no-repeat;
+  background-position: 20px center;
+  padding-left: 60px;
+}
+
+.search select {
+  border-right: 20px solid transparent;
+}
+
 @keyframes slideUpFade {
   from {
     opacity: 0;
@@ -220,5 +270,18 @@ header .menu-icon div {
 
   .hero .rightside img {
     height: 300px;
+  }
+
+  .search {
+    padding-bottom: 30px;
+  }
+
+  .search .title {
+    text-align: center;
+  }
+
+  .search .sides {
+    flex-direction: column;
+    gap: 20px;
   }
 }
